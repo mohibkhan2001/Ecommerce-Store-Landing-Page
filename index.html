@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <header>
+      <div class="name">
+          <h1>Clothing Store</h1>
+      </div>
+      <nav>
+          <ul id="nav-list">
+              <li class="nav-ul"><a href="#">Women</a></li>
+              <li class="nav-ul"><a href="#">Men</a></li>
+              <li class="nav-ul"><a href="#">Kids</a></li>
+              <li class="nav-ul"><a href="#">Sale</a></li>
+          </ul>
+      </nav>
+      <div class="header-options">
+          <a href="#" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <div id="search-bar" class="hidden">
+          <input type="text" placeholder="Search..." />
+          <button id="search-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+  </header>
+
+    <section class="page-1">
+      <div class="left-text">
+        <h1>Discover the Latest Fashion Trends.</h1>
+        <span
+          >Explore our curated collection of stylish and high quality
+          clothing.</span
+        >
+        <button><a href="#">Shop Women</a></button>
+        <button><a href="#">Shop Men</a></button>
+      </div>
+      <div class="right-img">
+        <img
+          src="/Images/industrial-cloth-store-mockup-left-view-poster.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="text-content">
+        <h1>About Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          temporibus quod ipsa et officia, voluptatibus ipsum. Exercitationem
+          non mollitia neque assumenda, fugit eum distinctio, beatae veniam
+          nostrum molestias maiores illum, reiciendis rerum vitae vel
+          reprehenderit unde tempora laborum dicta corporis iste hic? Assumenda
+          debitis vero atque consectetur accusantium quas qui.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="/Images/about-1.jpg" alt="Image 1" class="before" />
+        <img src="/Images/about-2.jpg" alt="Image 2" class="middle" />
+        <img src="/Images/about-3.jpg" alt="Image 3" class="after" />
+      </div>
+
+      <img src="/Images/pattern.svg" alt="" id="pattern" />
+    </section>
+    <h1 id="featureProducts">Featured Products</h1>
+    <section class="featured-products">
+      
+      <button class="arrow left-arrow">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <div class="product" id="large1">
+              <img src="Images/kids clothe 1.png" alt="Product 1" />
+              <h3>
+                Product 1 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$25.00</p>
+            </div>
+            <div class="product">
+              <img src="Images/kids clothe 2.png" alt="Product 2" />
+              <h3>
+                Product 2 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$30.00</p>
+            </div>
+            <div class="product">
+              <img src="Images/kids clothe 3.png" alt="Product 3" />
+              <h3>
+                Product 3 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$35.00</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="product">
+              <img src="Images/women bag 1.png" alt="Product 4" />
+              <h3>
+                Product 4 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$40.00</p>
+            </div>
+            <div class="product">
+              <img src="Images/women clothe 1.png" alt="Product 5" />
+              <h3>
+                Product 5 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$45.00</p>
+            </div>
+            <div class="product" id="large">
+              <img src="Images/women clothe 2.png" alt="Product 6" />
+              <h3>
+                Product 6 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$50.00</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="product">
+              <img src="/Images/women heel 1.png" alt="Product 7" />
+              <h3>
+                Product 7 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$55.00</p>
+            </div>
+            <div class="product">
+              <img src="Images/men clothe 1.png" alt="Product 8" />
+              <h3>
+                Product 8 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$60.00</p>
+            </div>
+            <div class="product">
+              <img src="Images/men clothe 2.png" alt="Product 9" />
+              <h3>
+                Product 9 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$65.00</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="product" id="width">
+              <img src="Images/men clothe 3.png" alt="Product 10" />
+              <h3>
+                Product 10 <a href="#"><button>Shop Now</button></a>
+              </h3>
+              <p>$70.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="arrow right-arrow">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </section>
+    <footer>
+      <div class="category">
+        <h1>Shop by Category</h1>
+        <ul class="category-ul">
+          <li class="category-items"><a href="#">Tops</a></li>
+          <li class="category-items"><a href="#">Bottoms</a></li>
+          <li class="category-items"><a href="#">Dresses</a></li>
+          <li class="category-items"><a href="#">Shoes</a></li>
+          <li class="category-items"><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h1>Contact Us Now</h1>
+        <ul class="contact-ul">
+          <li class="contacts-items"><a href="#">Instagram</a></li>
+          <li class="contacts-items"><a href="#">Facebook</a></li>
+          <li class="contacts-items"><a href="#">Call Us</a></li>
+          <li class="contacts-items"><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="map">
+        <h1>About the Developer</h1>
+        <p>
+          My name is Mohib Khan, and I am a front-end developer. I designed the landing page for this clothing store, focusing on creating a visually appealing and user-friendly experience to showcase our collection effectively.
+        </p>
+      </div>
+    </footer>
+    
+    <!-- Javascript starts here -->
+    <script src="script.js"></script>
+  </body>
+</html>
